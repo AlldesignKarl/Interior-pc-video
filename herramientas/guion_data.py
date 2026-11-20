@@ -3,7 +3,7 @@
 
 Todas las coordenadas están en píxeles de imagenes/pc-interior-original.jpg (1920x1920).
 Si cambias aquí el texto, vuelve a ejecutar render_video.py y se regeneran
-el vídeo borrador y los subtítulos con los tiempos nuevos.
+la voz (voz.py), el vídeo y los subtítulos con los tiempos nuevos.
 """
 
 # --- Cajas de cada componente (x0, y0, x1, y1) en la foto -------------------
@@ -67,7 +67,7 @@ SEGMENTOS = [
         id="refrigeracion",
         nombre="Refrigeración",
         etiqueta=("03", "REFRIGERACIÓN LÍQUIDA", "be quiet! Light Loop 360 mm"),
-        voz="Y como puede gastar hasta 250 vatios, se calienta muchísimo. Por eso lleva "
+        voz="Y como consume hasta 250 vatios, se calienta muchísimo. Por eso lleva "
             "refrigeración líquida: la bomba mueve el líquido por estos dos tubos hasta un radiador "
             "de 360 milímetros, y los ventiladores sacan el calor fuera.",
         camaras=[(0, V(700, 600, 1100)), ("por estos dos", V(1140, 520, 1300)),

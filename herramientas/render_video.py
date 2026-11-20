@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Genera el vídeo borrador vertical (1080x1920) + subtítulos .srt a partir de guion_data.py.
+"""Genera el vídeo vertical (1080x1920) con voz en off + subtítulos .srt a partir de guion_data.py.
 
 Uso:  python3 herramientas/render_video.py
-Salida: video/como-funciona-un-pc_borrador.mp4, video/subtitulos.srt, video/tiempos.json
+Salida: video/como-funciona-un-pc.mp4 (usa video/voz.wav de voz.py), video/subtitulos.srt, video/tiempos.json
 Necesita: Pillow y ffmpeg.
 """
 import json
@@ -54,7 +54,31 @@ def dur_palabra(p):
     return d
 
 
+VOZ_WAV = os.path.join(SALIDA, "voz.wav")
+VOZ_TIEMPOS = os.path.join(SALIDA, "voz_tiempos.json")
+
+
+def linea_tiempo_con_voz():
+    """Usa los tiempos reales de la voz generada por voz.py (si existen y cuadran con el guion)."""
+    if not (os.path.exists(VOZ_WAV) and os.path.exists(VOZ_TIEMPOS)):
+        return None
+    datos = json.load(open(VOZ_TIEMPOS, encoding="utf-8"))["segmentos"]
+    if [d["id"] for d in datos] != [s["id"] for s in SEGMENTOS]:
+        return None
+    segs, t_prev = [], 0.0
+    for s, d in zip(SEGMENTOS, datos):
+        palabras = s["voz"].split()
+        if len(palabras) != len(d["inicios"]):
+            return None
+        segs.append(dict(s, palabras=palabras, inicios=d["inicios"], t0=t_prev, fin_voz=d["fin_voz"], t1=d["t1"]))
+        t_prev = d["t1"]
+    return segs, t_prev
+
+
 def construir_linea_tiempo():
+    con_voz = linea_tiempo_con_voz()
+    if con_voz:
+        return con_voz
     t = 0.0
     segs = []
     for s in SEGMENTOS:
@@ -430,11 +454,15 @@ def main():
     print(f"Total: {TOTAL:.1f} s, {N} fotogramas")
     if "--solo-tiempos" in sys.argv:
         return
-    destino = os.path.join(SALIDA, "como-funciona-un-pc_borrador.mp4")
+    hay_voz = linea_tiempo_con_voz() is not None
+    destino = os.path.join(SALIDA, "como-funciona-un-pc.mp4" if hay_voz else "como-funciona-un-pc_sin-voz.mp4")
+    audio = (["-i", VOZ_WAV, "-af", "loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000,apad", "-ac", "2"] if hay_voz
+             else ["-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=48000"])
+    print("Audio:", "voz en off (video/voz.wav)" if hay_voz else "silencio (ejecuta antes herramientas/voz.py)")
     cmd = ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
-           "-r", str(FPS), "-i", "-", "-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=48000",
+           "-r", str(FPS), "-i", "-", *audio,
            "-map", "0:v", "-map", "1:a", "-shortest", "-c:v", "libx264", "-preset", "medium", "-crf", "23", "-tune", "stillimage",
-           "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "96k", "-movflags", "+faststart", destino]
+           "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", destino]
     ff = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     frames = range(N)
     if "--prueba" in sys.argv:

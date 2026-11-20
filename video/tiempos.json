@@ -1,74 +1,74 @@
 {
- "total": 154.56,
+ "total": 135.36,
  "segmentos": [
   {
    "id": "inicio",
    "nombre": "Gancho",
    "inicio": 0.0,
-   "fin": 11.05,
+   "fin": 10.73,
    "palabras": 27
   },
   {
    "id": "placa",
    "nombre": "Placa base",
-   "inicio": 11.05,
-   "fin": 19.7,
+   "inicio": 10.73,
+   "fin": 18.45,
    "palabras": 27
   },
   {
    "id": "cpu",
    "nombre": "Procesador",
-   "inicio": 19.7,
-   "fin": 40.68,
+   "inicio": 18.45,
+   "fin": 37.06,
    "palabras": 55
   },
   {
    "id": "refrigeracion",
    "nombre": "Refrigeración",
-   "inicio": 40.68,
-   "fin": 54.35,
-   "palabras": 37
+   "inicio": 37.06,
+   "fin": 49.9,
+   "palabras": 36
   },
   {
    "id": "ram",
    "nombre": "RAM",
-   "inicio": 54.35,
-   "fin": 75.08,
+   "inicio": 49.9,
+   "fin": 66.97,
    "palabras": 62
   },
   {
    "id": "ssd",
    "nombre": "SSD",
-   "inicio": 75.08,
-   "fin": 92.08,
+   "inicio": 66.97,
+   "fin": 81.57,
    "palabras": 47
   },
   {
    "id": "grafica",
    "nombre": "Gráfica",
-   "inicio": 92.08,
-   "fin": 119.86,
+   "inicio": 81.57,
+   "fin": 106.16,
    "palabras": 78
   },
   {
    "id": "fuente",
    "nombre": "Fuente y cables",
-   "inicio": 119.86,
-   "fin": 138.07,
+   "inicio": 106.16,
+   "fin": 122.06,
    "palabras": 53
   },
   {
    "id": "resumen",
    "nombre": "Resumen",
-   "inicio": 138.07,
-   "fin": 152.55,
+   "inicio": 122.06,
+   "fin": 133.9,
    "palabras": 45
   },
   {
    "id": "bucle",
    "nombre": "Final en bucle",
-   "inicio": 152.55,
-   "fin": 154.56,
+   "inicio": 133.9,
+   "fin": 135.36,
    "palabras": 6
   }
  ]

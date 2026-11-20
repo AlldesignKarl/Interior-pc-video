@@ -1,6 +1,6 @@
 # ¿Cómo funciona un PC? (guion de vídeo en bucle)
 
-Vídeo vertical (TikTok / Reels / Shorts) de **unos 2:35**, sobre una foto real del interior de un PC gaming actual.
+Vídeo vertical (TikTok / Reels / Shorts) de **2:15 con voz en off**, sobre una foto real del interior de un PC gaming actual.
 El final corta a mitad de frase (*"Y por eso, ahora ya sabes…"*) y el vídeo vuelve a empezar con *"…¿cómo funciona un PC?"*, de modo que la frase se completa al volver al principio.
 
 ![PC anotado](imagenes/pc-interior-anotado.jpg)
@@ -27,7 +27,7 @@ Son componentes reales: el autor de la foto los identificó en su ficha de Wikim
 
 ## Guion por bloques
 
-Los tiempos son los del vídeo borrador. Si lo grabas con tu voz, se moverán un poco.
+Los tiempos son los del vídeo final con voz (`video/como-funciona-un-pc.mp4`). Si lo regrabas con tu voz, se moverán un poco.
 
 ### 0:00 – 0:11 · Gancho
 - **Plano:** la foto entera.
@@ -36,12 +36,12 @@ Los tiempos son los del vídeo borrador. Si lo grabas con tu voz, se moverán un
   > ¿Cómo funciona un PC? Este PC gaming lleva por dentro una RTX 5070 Ti, un Intel i9-14900K y 64 gigas de RAM DDR5. Vamos pieza a pieza.
 - **Resaltado:** gráfica, luego procesador y luego RAM, según los nombras.
 
-### 0:11 – 0:20 · Placa base
+### 0:11 – 0:18 · Placa base
 - **Plano:** zoom a la placa base entera. Etiqueta: *01 · PLACA BASE · ASUS ROG Strix Z690-F Gaming WiFi*.
 - **Voz:**
   > Todo va enchufado a la placa base. Es como una ciudad: cada pieza tiene su sitio y se hablan por miles de pistas de cobre, como carreteras.
 
-### 0:20 – 0:41 · Procesador + ejemplo de Fortnite
+### 0:18 – 0:37 · Procesador + ejemplo de Fortnite
 - **Plano:** zoom al bloque blanco *be quiet!* (el procesador está debajo). Etiqueta: *02 · PROCESADOR · Intel Core i9-14900K · 24 núcleos · 6,0 GHz*.
 - **Voz:**
   > Debajo de este bloque está el cerebro: el procesador. Un i9-14900K con 24 núcleos y hasta 6 gigahercios. Calcula todo lo que pasa en la partida: cada jugador, cada disparo, cada construcción.
@@ -49,12 +49,12 @@ Los tiempos son los del vídeo borrador. Si lo grabas con tu voz, se moverán un
   > **Por eso en Fortnite, en modo rendimiento, que es donde más trabaja el procesador, este PC va a unos 400 o 500 FPS.**
 - **Tarjeta:** POR ESO… · *Fortnite · Modo rendimiento · 1080p* · **≈ 400–500 FPS**
 
-### 0:41 – 0:54 · Refrigeración líquida
+### 0:37 – 0:50 · Refrigeración líquida
 - **Plano:** de la bomba a los tubos y de ahí al radiador del frontal. Etiqueta: *03 · REFRIGERACIÓN LÍQUIDA · be quiet! Light Loop 360 mm*.
 - **Voz:**
-  > Y como puede gastar hasta 250 vatios, se calienta muchísimo. Por eso lleva refrigeración líquida: la bomba mueve el líquido por estos dos tubos hasta un radiador de 360 milímetros, y los ventiladores sacan el calor fuera.
+  > Y como consume hasta 250 vatios, se calienta muchísimo. Por eso lleva refrigeración líquida: la bomba mueve el líquido por estos dos tubos hasta un radiador de 360 milímetros, y los ventiladores sacan el calor fuera.
 
-### 0:54 – 1:15 · RAM + ejemplo de multitarea
+### 0:50 – 1:07 · RAM + ejemplo de multitarea
 - **Plano:** zoom a las 2 barras con luces. Etiqueta: *04 · MEMORIA RAM · G.Skill Trident Z5 RGB · 64 GB DDR5-6000 CL30*.
 - **Voz:**
   > Estas dos barras con luces son la RAM: 64 gigas DDR5. Es la mesa de trabajo del procesador: lo que estás usando se carga aquí, porque es muchísimo más rápida que el disco. Y van dos para trabajar en doble canal: el doble de carriles.
@@ -62,7 +62,7 @@ Los tiempos son los del vídeo borrador. Si lo grabas con tu voz, se moverán un
   > **Por eso puedes tener Fortnite, Discord, Chrome y OBS grabando a la vez sin que se trabe.**
 - **Tarjeta:** POR ESO… · *Fortnite + Discord + Chrome + OBS* · **64 GB**
 
-### 1:15 – 1:32 · SSD + ejemplo de tiempos de carga
+### 1:07 – 1:22 · SSD + ejemplo de tiempos de carga
 - **Plano:** zoom al disipador *CTRL + WASD*, entre el procesador y la gráfica (el SSD está debajo). Etiqueta: *05 · ALMACENAMIENTO · SSD · Samsung 990 Pro 1 TB · NVMe PCIe 4.0*.
 - **Voz:**
   > Aquí, bajo este disipador, está el disco: un SSD Samsung 990 Pro, conectado directo al procesador, que lee a más de 7.000 megas por segundo: unas 50 veces más que un disco duro antiguo.
@@ -70,7 +70,7 @@ Los tiempos son los del vídeo borrador. Si lo grabas con tu voz, se moverán un
   > **Por eso Windows arranca en segundos y las partidas cargan casi al instante.**
 - **Tarjetas:** VELOCIDAD DE LECTURA · **7.450 MB/s**, y luego POR ESO… · *Windows y partidas* · **en segundos**
 
-### 1:32 – 2:00 · Tarjeta gráfica + ejemplo de Cyberpunk
+### 1:22 – 1:46 · Tarjeta gráfica + ejemplo de Cyberpunk
 - **Plano:** barrido por la gráfica, de izquierda a derecha. Etiqueta: *06 · TARJETA GRÁFICA · GPU · Gigabyte RTX 5070 Ti AERO OC · 16 GB GDDR7*.
 - **Voz:**
   > Y esta bestia es la tarjeta gráfica: una RTX 5070 Ti con 16 gigas de memoria propia. Va pinchada en la ranura PCI Express y tiene casi 9.000 núcleos que dibujan cada imagen que ves, cientos de veces por segundo. Ojo: el monitor se conecta a la gráfica, no a la placa.
@@ -78,19 +78,19 @@ Los tiempos son los del vídeo borrador. Si lo grabas con tu voz, se moverán un
   > **Por eso Cyberpunk, a 1440p con path tracing, va a unos 40 FPS a pelo… pero con DLSS 4 y generación de fotogramas pasa de 150.**
 - **Tarjetas:** ERROR TÍPICO · **NO a la placa**, luego **≈ 40 FPS**, y luego **+150 FPS** (con DLSS 4 y generación de fotogramas)
 
-### 2:00 – 2:18 · Fuente de alimentación y cables
+### 1:46 – 2:02 · Fuente de alimentación y cables
 - **Plano:** la cubierta inferior, luego el cable de 24 pines (a la derecha de la RAM), los de 8 pines arriba a la izquierda y el de 16 pines que baja a la gráfica. Etiqueta: *07 · FUENTE DE ALIMENTACIÓN · recomendada ≈ 850 W*.
 - **Voz:**
   > ¿Y la energía? Aquí abajo, escondida, está la fuente de alimentación: convierte los 230 voltios del enchufe en 12 y los reparte por cables. Este gordo de 24 pines va a la placa, estos de arriba al procesador, y este de 16 pines a la gráfica, que ella sola se traga 300 vatios.
 - **Tarjeta:** CONSUMO DE LA GRÁFICA · **300 W**
 
-### 2:18 – 2:32 · Resumen: cómo trabajan juntas las piezas
+### 2:02 – 2:14 · Resumen: cómo trabajan juntas las piezas
 - **Plano:** la foto entera. Arriba, la cadena **SSD → RAM → CPU → GPU → MONITOR**, que se va iluminando paso a paso.
 - **Voz:**
   > Así que, cuando juegas: el SSD carga el juego en la RAM, el procesador calcula qué pasa, y la gráfica lo dibuja y lo manda al monitor. Cada vez que hace eso es un fotograma, y los que hace en un segundo… son tus FPS.
 - **Texto:** **FPS = fotogramas por segundo**
 
-### 2:32 – 2:35 · Final en bucle
+### 2:14 – 2:15 · Final en bucle
 - **Plano:** la foto entera, **el mismo encuadre que el primer fotograma**.
 - **Voz:**
   > Y por eso, ahora ya sabes…
@@ -106,7 +106,7 @@ Los tiempos son los del vídeo borrador. Si lo grabas con tu voz, se moverán un
 >
 > Debajo de este bloque está el cerebro: el procesador. Un i9-14900K con 24 núcleos y hasta 6 gigahercios. Calcula todo lo que pasa en la partida: cada jugador, cada disparo, cada construcción. Por eso en Fortnite, en modo rendimiento, que es donde más trabaja el procesador, este PC va a unos 400 o 500 FPS.
 >
-> Y como puede gastar hasta 250 vatios, se calienta muchísimo. Por eso lleva refrigeración líquida: la bomba mueve el líquido por estos dos tubos hasta un radiador de 360 milímetros, y los ventiladores sacan el calor fuera.
+> Y como consume hasta 250 vatios, se calienta muchísimo. Por eso lleva refrigeración líquida: la bomba mueve el líquido por estos dos tubos hasta un radiador de 360 milímetros, y los ventiladores sacan el calor fuera.
 >
 > Estas dos barras con luces son la RAM: 64 gigas DDR5. Es la mesa de trabajo del procesador: lo que estás usando se carga aquí, porque es muchísimo más rápida que el disco. Y van dos para trabajar en doble canal: el doble de carriles. Por eso puedes tener Fortnite, Discord, Chrome y OBS grabando a la vez sin que se trabe.
 >
@@ -120,9 +120,21 @@ Los tiempos son los del vídeo borrador. Si lo grabas con tu voz, se moverán un
 >
 > Y por eso, ahora ya sabes…
 
-*(437 palabras: unos 2:20–2:35 leyendo a ritmo de TikTok.)*
+*(436 palabras: 2:15 con la voz del vídeo.)*
 
 ---
+
+## La voz en off
+
+- La genera **Piper**, un programa de voz sintética que funciona sin internet, con la voz **`es_ES-davefx-medium`**: masculina, español de España, licencia **CC0** (libre, también para uso comercial).
+- Algunas palabras se escriben de una forma y la voz las lee de otra para que suenen bien: *Fortnite* se lee "fórnait", *RTX 5070 Ti* "erre te equis cincuenta setenta te i", *SSD* "esesedé", *DLSS* "de ele ese ese", *Cyberpunk* "sáiber pank", etc. La lista está en `herramientas/voz.py`.
+- La he comprobado transcribiéndola con Whisper: se entiende el guion completo, y los subtítulos van sincronizados con la voz con un error típico de menos de 0,1 s.
+- **Para cambiar la voz:** en la misma página de voces de Piper hay otras en español (por ejemplo `es_ES-sharvard-medium`, que tiene voz de hombre y de mujer, o `es_MX-claude-high`, mexicana). Descarga el `.onnx` y su `.onnx.json` en `voces/` y ejecuta:
+  ```
+  python3 herramientas/voz.py --voz voces/es_ES-sharvard-medium.onnx --hablante 1
+  python3 herramientas/render_video.py
+  ```
+  Con `--velocidad 0.85` habla más rápido y con `1.0`, más pausado.
 
 ## Cómo hacer que el bucle quede perfecto
 
@@ -147,9 +159,10 @@ Los tiempos son los del vídeo borrador. Si lo grabas con tu voz, se moverán un
 | `imagenes/pc-interior-original.jpg` | La foto limpia (1920×1920) |
 | `imagenes/pc-interior-anotado.jpg` | La foto con cada pieza numerada y una leyenda |
 | `imagenes/planos/*.jpg` | Un plano vertical 1080×1920 por pieza, sin texto, para montar en CapCut o Premiere |
-| `video/como-funciona-un-pc_borrador.mp4` | Vídeo borrador 1080×1920 con zooms, resaltados, tarjetas y subtítulos, **sin voz** (pista de audio en silencio) |
-| `video/subtitulos.srt` | Subtítulos sincronizados con el borrador |
-| `herramientas/` | Scripts que generan el vídeo y las imágenes (`guion_data.py` contiene el texto y los encuadres) |
+| `video/como-funciona-un-pc.mp4` | **Vídeo final** 1080×1920 con voz en off, zooms, resaltados, tarjetas y subtítulos sincronizados |
+| `video/voz.wav` | Solo la voz en off, por si quieres montarla tú con otra música o planos |
+| `video/subtitulos.srt` | Subtítulos sincronizados con la voz (para importar en CapCut o Premiere) |
+| `herramientas/` | Scripts que generan la voz, el vídeo y las imágenes (`guion_data.py` contiene el texto y los encuadres) |
 
 ## Créditos y licencia de la foto
 
